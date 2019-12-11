@@ -28,22 +28,22 @@
 + `$ git switch master`切换至主分支
 + `$ git merge fenzhi1`将分支1与其母分支合并
 + `$ git branch -d fenzhi1`删除分支1
-查看分支图：`$ git log --graph --pretty=oneline --abbrev-commit`
-强制删除分支1：`$ git checkout -D fenzhi1`
-查看远程库信息：
++ 查看分支图：`$ git log --graph --pretty=oneline --abbrev-commit`
++ 强制删除分支1：`$ git checkout -D fenzhi1`
++ 查看远程库信息：
 + `$ git remote`
 + `$ git remote -v`显示细节
-推送分支1至origin：`$ git push origin fenzhi1
-在本地创建与远程分支对应的分支：`$ git checkout -b fenzhi2 origin/fenzhi2`只管修改分支2，不时合并分支（git add然后git commit）
-若推送失败：`$ git pull`来抓取分支
-若抓取失败：
++ 推送分支1至origin：`$ git push origin fenzhi1
++ 在本地创建与远程分支对应的分支：`$ git checkout -b fenzhi2 origin/fenzhi2`只管修改分支2，不时合并分支（git add然后git commit）
++ 若推送失败：`$ git pull`来抓取分支
++ 若抓取失败：
 先`$ git branch --set-upstream-to=origin/fenzhi2 fenzhi2`建立本地分支和远程分支的关联
 再抓取`$ git pull`,然后在解决了冲突后git commit并`$ git push origin fenzhi2`即可
 把本地未push的分叉提交历史整理成直线：`$ git rebase`
 ++++++
 #### 总结：我认为git的作用大致分为以下几类:
 + 记录下文件的修改，在改动错误等需求下，可以根据记录的历史修改，将文件恢复至未修改前的某个适当的版本；
-+ 建立新的分支，再对新的分支进行修改，当新的分支符合修改要求时，可合并分支，避免了直接改动源文件带来错误后的不已恢复性；
++ 建立新的分支，再对新的分支进行修改，当新的分支符合修改要求时，可合并分支，避免了直接改动源文件带来错误后的不易恢复性；
 + 可以多人共同对同一个文件进行开发，每个人建立不同的分支，并对自己负责的分支进行改动即可，最后商榷后合并为同至源文件，即可完成源文件的修改；
 #### 特点：
 + 从分支进行修改时，大可不必为改动出错而烦恼；
