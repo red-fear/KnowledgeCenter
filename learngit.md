@@ -1,9 +1,8 @@
 ### learn github
 #### 1.安装 git
-(```)
 + $ git config --global user.name "Your Name"
 + $ git config --global user.email "email@example.com"
-(```)
+
 #### 2.创建版本库
 + 先在本地建一个文件夹，在此文件夹中打开git命令提示符界面，然后`$ git init`
 + `$ git add <file>`添加文件至仓库
