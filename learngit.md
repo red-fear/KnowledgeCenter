@@ -1,4 +1,4 @@
-### learn github
+###learn github
 ####1.安装 git
 (```)
 +$ git config --global user.name "Your Name"
