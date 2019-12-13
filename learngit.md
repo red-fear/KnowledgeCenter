@@ -32,7 +32,7 @@
 + 查看远程库信息：
 + `$ git remote`
 + `$ git remote -v`显示细节
-+ 推送分支1至origin：`$ git push origin fenzhi1
++ 推送分支1至origin：`$ git push origin fenzhi1`
 + 在本地创建与远程分支对应的分支：`$ git checkout -b fenzhi2 origin/fenzhi2`只管修改分支2，不时合并分支（git add然后git commit）
 + 若推送失败：`$ git pull`来抓取分支
 + 若抓取失败：先`$ git branch --set-upstream-to=origin/fenzhi2 fenzhi2`建立本地分支和远程分支的关联
